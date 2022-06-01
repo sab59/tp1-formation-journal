@@ -1,0 +1,110 @@
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content
+{
+    padding-bottom: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-item
+{
+    margin-top: 20px;
+}
+
+.contact-item
+{
+    margin-top: 20px;
+    transition: 1s all;
+}
+
+.social-item a:hover
+{
+    color: rgb(43, 51, 59);
+}
+
+.social-item .fb:hover
+{
+    color: #3b5998;
+}
+
+.social-item .insta:hover
+{
+    color: #C32AA3;
+}
+
+.social-item .twitter:hover
+{
+    color: #1DA1F2;
+}
+
+.social-item .yt:hover
+{
+    color: #FF0000;
+}
+
+.social-item a
+{
+    transition: .7s all;
+
+}
+
+.newsletter-form input[type="email"]
+{
+    padding: 10px;
+    width: 20rem;
+}
+
+.newsletter-form .newsletter-btn
+{
+    border: 1px solid black;
+    padding: .5rem 1.5rem;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.newsletter-form .newsletter-btn:hover
+{
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1.5rem;
+}
+
+.contact-list
+{text-transform: uppercase;}
+
+
+.contact-list .contact-item:hover
+{
+    color: rgb(78, 82, 87);
+}
+
+
+
+@media screen and (max-width: 1024px)
+{
+    :root
+    {font-size: 10px;}
+    .newsletter
+    {display: none;}
+
+    .main-video
+    {
+        height: 300px;
+        width: 80%;
+    }
+
+}
