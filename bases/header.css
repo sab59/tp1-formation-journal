@@ -1,0 +1,77 @@
+
+.brand
+{
+    margin-left: 5%;
+}
+
+
+.content .header
+{
+    height: 60vh;
+    width: 100%;
+    background: var(--header-image);
+}
+
+
+.content .header .overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color-opacity);
+    display: flex;
+    justify-content: center;
+    transition: 1s all;
+}
+
+.content .header .overlay iframe
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.content .header .overlay .header-content
+{
+    max-width: 50%;
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .header .overlay .header-content h1
+{
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+.header-content p
+{font-size: 1.6rem;}
+
+
+
+.title-bold
+{
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 1.5s all;
+}
+
+.title-bold:hover
+{
+    filter: blur(10px);
+    cursor:default;
+}
+
+.blur
+{
+    animation-name: blur;
+    animation-duration: 2s;
+}
+
+
+
+
+@keyframes blur
+{ from {filter: blur(200px);} }

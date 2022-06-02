@@ -1,0 +1,302 @@
+body{
+    background: url(../img/fondpage.PNG) no-repeat top center/cover;
+}
+
+:root
+{
+    --header-image: url("../img/hautdepage.PNG") no-repeat top center/cover;
+}
+
+.content .header
+{
+    background: var(--header-image);
+}
+
+section{
+    height: 250px;
+} 
+/* début partie section */ 
+
+/*permet de mettre les élement à côté des uns des autres*/
+#comparaison{ 
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.photoleft{
+    width: 40%;
+
+    /*élément décalé du bord de la page*/
+    margin-left: 2%; 
+}
+.ancien{
+    display: inline;
+    justify-content: left;
+    width: 100%;
+    object-fit: cover;
+}
+.middle{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*met les 2 éléments l'un au-dessus de l'autre*/
+    flex-direction: column-reverse; 
+    width: 33%;
+}
+.photomiddle{
+    width: 80%;
+    height: 59%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blason{
+    width: 30%;
+}
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    /*permet de décaler l'élément au bot de la page*/
+    justify-content: flex-end; 
+}
+.photoright{
+    width: 47%;
+    margin-right: 2%;
+}
+.nouveau{
+    display: inline;
+    justify-content: left;
+    width: 100%;
+    object-fit: cover;
+}
+.dateleft{
+    margin-left: 33%;
+
+    /*taille préféré pour le comparatif*/
+    font-size: 3em; 
+}
+.dateright{
+    margin-right: 35%;
+    font-size: 3em;                   
+}
+/*fin partie section*/
+h2{
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    text-align: center;
+}
+article{
+    width: 100vw;
+    display: flex;
+}
+.photo1{
+    height: 85%;
+    width: 91%;
+    padding-left: 11%;
+}
+.photo2{
+    height: 82%;
+    width: 85%;
+}
+.photo3{
+    height: 85%;
+    width: 85%;
+}
+div article{
+    width: 97%;
+}
+.div1{
+    width: 33%;
+}
+.div2{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.div3{
+    width: 33%;
+}
+/*Début des paragraphe*/
+.texte1{                
+    min-height: 100vh;
+    margin: 0% 10% 10% 10%;
+
+    /*espace etre les lignes du texte pour éviter un gros bloc*/
+    line-height: 20px;
+
+    /*espace entre les lettres du texte pour éviter un gros bloc*/      
+    letter-spacing: 1px;
+    
+    /*permet de bien cadre le texte*/
+    text-align: justify; 
+}
+.fond-text1{
+    width: 30%;
+    float: right;
+    margin-left: 2%;
+}
+.texte2{
+    min-height: 100vh;
+    margin: 10% 10%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.fond-text2{
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+}
+.texte3{
+    min-height: 100vh;
+    margin: 10% 10%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 2%;
+}
+.fond-text3{
+    float: right;
+    width: 50%;
+    margin-left: 2%;
+}
+.texte4{
+    min-height: 100vh;
+    margin: 10% 10%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.fond-text4{
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+}
+.texte5{
+    min-height: 100vh;
+    margin: 10% 10% 0 10%;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+
+}
+.fond-text5{
+    float: right;
+    width: 30%;
+    margin-left: 2%;               
+}
+/*fin paragraphe*/
+
+/*début de la partie bouton*/
+.bouton{            
+    display: flex;
+    width: 25%;
+}
+aside{
+    display: flex;
+}
+#buttom{
+    width: 15%;
+    display: flex;
+    align-self: center;
+}
+.fond-bouton{
+    width: 70%;
+}
+
+
+#fleche1{
+    display: flex;
+    height: 10%;
+}
+
+#fleche2{
+    display: flex;
+    height: 10%;      
+    align-self: center;
+}
+#fleche3{
+    display: flex;
+    height: 10%;
+    align-self: end;
+}
+aside p{
+    text-decoration: underline;
+    font-weight: bold;   
+}
+/*fin de la partie bouton*/
+
+/*début animation*/
+#fleche1, #fleche2, #fleche3{   
+    animation: disparition 3s linear;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+/*utilisation de opacity pour faire disparaître les fléches*/
+@keyframes disparition{
+    0%{ opacity: 1;}
+    25%{ opacity: 0.75;}  
+    50%{ opacity: 0.50;}
+    75%{ opacity: 0.25;}
+    100%{ opacity: 0;}    
+}
+/*fin animation*/
+
+/*début du responsive*/
+@media screen and (max-width: 1024px)  
+{
+    .div1{
+        /*supprime l'image pour une meilleur visibilité des images*/
+        display: none; 
+    }   
+    
+    .div2{
+        margin-left: 13%;
+    }
+    
+    #comparaison{
+        display: flex;
+
+        /*met en colonne pour une meilleur visiblité sur petit écran*/
+        flex-direction: column;
+    }
+    .left{
+
+        /*les différent margin permet de bien centrer les éléments*/
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    .right{
+        margin-bottom: 8%;
+    }
+    .middle{
+        flex-direction: row;
+        margin-left: 28%;
+        margin-bottom: 3%;
+    }
+    #fleche1, #fleche2, #fleche3{
+        margin-left: 4%;
+    }
+    #buttom{
+        margin-left: 4%;
+    }
+    aside{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    div article{
+        margin-top: 10%;
+    }                          
+
+}
